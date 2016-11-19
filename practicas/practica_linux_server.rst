@@ -25,9 +25,9 @@ Práctica: Configuración de servidores GNU/Linux
 
     Los nombres de los equipos van a ser:
 
-        * ``silvestre.josedom.gonzalonazareno.org``
-        * ``piolin.josedom.gonzalonazareno.org``
-        * ``taz.josedom.gonzalonazareno.org``
+        * ``homer.josedom.gonzalonazareno.org``
+        * ``barney.josedom.gonzalonazareno.org``
+        * ``lisa.josedom.gonzalonazareno.org``
 
     * El servidor DNS va a estar instalado en ``barney.josedom.gonzalonazareno.org``
     * El servidor web va a estar instalado en ``lisa.josedom.gonzalonazareno.org``, y vamos a tener dos páginas webs:
@@ -51,7 +51,7 @@ Vamos a instalar un sevidor dns que nos permita gestionar la resolución directa
 
 El servidor DNS se va a instalar en el servidor 2. Y en un primer momento se configurará de la siguiente manera:
 
-    * El servidor DNS se llama ``servidor2.tu_nombre.gonzalonazareno.org`` y va a ser el servidor con autoridad para la zona ``tu_nombre.gonzalonazareno.org``.
+    * El servidor DNS se llama ``barney.tu_nombre.gonzalonazareno.org`` y va a ser el servidor con autoridad para la zona ``tu_nombre.gonzalonazareno.org``.
     * El servidor debe resolver el nombre de los tres servidores.
     * Se debe configurar las zonas de resolución inversa.
 
@@ -60,7 +60,7 @@ El servidor DNS se va a instalar en el servidor 2. Y en un primer momento se con
     * Debes determinar si la resolución directa se hace con dirección ip fijas o flotantes del cloud depediendo del servicio que se este prestando.
     * Debes considerar la posibilidad de hacer dos zonas de resolución inversa para resolver ip jijas o flotantes del cloud.
     * Debes modificar la configuración del servidor DHCP del cloud para que mande a los servidores el nuevo nombre de dominio.
-
+ser
 .. warning::
 
     * **Tarea 1 (1 puntos):** Comprueba que los servidores tienen configurados el nuevo nombre de dominio de forma adecuada después de volver a renovar la concesión del servidor DHCP. Documenta el contenido del fichero en el que se puede comprobar este punto (ejecuta el comando ``hostname -f`` y muestra el fichero ``/etc/resolv.conf``).
